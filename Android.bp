@@ -1,0 +1,12 @@
+android_app_import {
+	name: "CameraPrebuilt",
+	owner: "google",
+	apk: "CameraPrebuilt.apk",
+	overrides: ["Camera2", "Snap"],
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
