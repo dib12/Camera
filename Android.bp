@@ -9,4 +9,14 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
+	required: [
+        "camerago_lily_experience.xml",
+    ],
+}
+
+prebuilt_etc {
+    name: "camerago_lily_experience.xml",
+    src: "camerago_lily_experience.xml",
+    sub_dir: "sysconfig",
+    product_specific: true,
 }
