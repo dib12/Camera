@@ -10,8 +10,21 @@ android_app_import {
 	privileged: true,
 	product_specific: true,
 	required: [
+        "GalleryPrebuilt",
         "camerago_lily_experience.xml",
     ],
+}
+
+android_app_import {
+	name: "GalleryPrebuilt",
+	owner: "google",
+	apk: "GalleryPrebuilt.apk",
+	overrides: ["Gallery2"],
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
 }
 
 prebuilt_etc {
